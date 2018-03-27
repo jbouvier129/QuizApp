@@ -17,7 +17,6 @@ public class Results extends AppCompatActivity {
         setContentView(R.layout.activity_results);
         score = getIntent().getFloatExtra("points", score);
         userScore(score);
-
     }
 
     public void restartQuiz(View view) {
@@ -52,6 +51,8 @@ public class Results extends AppCompatActivity {
             message = "REALLY??";
         } else if (finalScore == 17) {
             message = "DID YOU EVEN TRY??";
+        } else if (finalScore == 0) {
+            message = "NOT EVEN ONE?!?!";
         } else {
             message = "WHAT DID YOU DO??";
         }

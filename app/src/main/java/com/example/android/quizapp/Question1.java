@@ -8,7 +8,7 @@ import android.widget.RadioGroup;
 
 public class Question1 extends AppCompatActivity {
 
-    float score;
+    String userAnswer1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,16 +18,13 @@ public class Question1 extends AppCompatActivity {
 
     public void userAnswer(View view) {
         RadioGroup selection = findViewById(R.id.radio);
-        int answer = selection.getCheckedRadioButtonId();
-        String userAnswer = getResources().getResourceEntryName(answer);
-        if (userAnswer.equals("b")) {
-            score = score + 1f;
-        }
+        int answer1 = selection.getCheckedRadioButtonId();
+        userAnswer1 = getResources().getResourceEntryName(answer1);
     }
 
     public void questionTwo(View view) {
         Intent question2 = new Intent(getApplicationContext(), Question2.class);
-        question2.putExtra("points", score);
+        question2.putExtra("q1Answer", userAnswer1);
         startActivity(question2);
     }
 
