@@ -17,6 +17,7 @@
             android:gravity="center"
             android:text="@string/app_title"
             android:textSize="24sp"
+            android:textColor="@color/primaryTextColor"
             android:textStyle="bold" />
 
         <ImageView
@@ -27,13 +28,23 @@
             android:paddingTop="75dp"
             android:scaleType="center"
             android:src="@drawable/question" />
+
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".5"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:onClick="startQuiz"
-        android:text="@string/start_button" />
+        android:text="@string/start_button"
+        android:textColor="@color/primaryTextColor" />
 
 </RelativeLayout>

@@ -6,6 +6,14 @@
     android:orientation="vertical"
     tools:context="com.example.android.quizapp.Results">
 
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".3"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,7 +24,8 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/results"
-            android:textSize="24sp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/questionTextSize"
             android:textStyle="bold" />
 
         <TextView
@@ -26,17 +35,20 @@
             android:layout_marginTop="180dp"
             android:gravity="center"
             android:text=""
-            android:textSize="72sp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/scoreTextSize"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/messageView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24sp"
+            android:layout_marginTop="24dp"
             android:gravity="center"
             android:text=""
-            android:textSize="24sp" />
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/questionTextSize"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <Button
@@ -45,11 +57,12 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginBottom="@dimen/navButtonBotMarg"
+        android:layout_marginLeft="@dimen/navButtonSideMarg"
+        android:layout_marginStart="@dimen/navButtonSideMarg"
         android:onClick="restartQuiz"
-        android:text="@string/restart" />
+        android:text="@string/restart"
+        android:textColor="@color/primaryTextColor" />
 
     <Button
         android:layout_width="wrap_content"
@@ -57,10 +70,11 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginBottom="@dimen/navButtonBotMarg"
+        android:layout_marginEnd="@dimen/navButtonSideMarg"
+        android:layout_marginRight="@dimen/navButtonSideMarg"
         android:onClick="exitToMain"
-        android:text="@string/exit_to_start" />
+        android:text="@string/exit_to_start"
+        android:textColor="@color/primaryTextColor" />
 
 </RelativeLayout>

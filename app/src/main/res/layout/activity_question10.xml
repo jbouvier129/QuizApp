@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context="com.example.android.quizapp.Question10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/question10"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/questionTextSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/questionMarginBottom"
+            android:layout_marginTop="@dimen/questionMarginTop"
+            android:gravity="center"
+            android:text="@string/tenthQuestion"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/questionTextSize"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/box1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/checkboxMargin"
+            android:onClick="userAnswer"
+            android:paddingLeft="@dimen/checkboxPadding"
+            android:text="@string/q10A"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/answerTextSize"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/box2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/checkboxMargin"
+            android:onClick="userAnswer"
+            android:paddingLeft="@dimen/checkboxPadding"
+            android:text="@string/q10B"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/answerTextSize"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/box3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/checkboxMargin"
+            android:onClick="userAnswer"
+            android:paddingLeft="@dimen/checkboxPadding"
+            android:text="@string/q10C"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/answerTextSize"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/box4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/checkboxMargin"
+            android:onClick="userAnswer"
+            android:paddingLeft="@dimen/checkboxPadding"
+            android:text="@string/q10D"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/answerTextSize"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".3"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/navButtonBotMarg"
+        android:layout_marginLeft="@dimen/navButtonSideMarg"
+        android:layout_marginRight="@dimen/navButtonSideMarg"
+        android:onClick="resultsPage"
+        android:text="@string/finish"
+        android:textAllCaps="true"
+        android:textColor="@color/primaryTextColor" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/navButtonBotMarg"
+        android:layout_marginLeft="@dimen/navButtonSideMarg"
+        android:layout_marginStart="@dimen/navButtonSideMarg"
+        android:onClick="backButton"
+        android:text="@string/previous"
+        android:textColor="@color/primaryTextColor" />
+
+</RelativeLayout>

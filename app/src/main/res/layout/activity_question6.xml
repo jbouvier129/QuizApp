@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundColor"
     android:orientation="vertical"
     tools:context="com.example.android.quizapp.Question6">
 
@@ -17,60 +16,85 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/question6"
-            android:textSize="24sp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/questionTextSize"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginBottom="@dimen/questionMarginBottom"
+            android:layout_marginTop="@dimen/questionMarginTop"
             android:gravity="center"
-            android:text="@string/sixth_question"
-            android:textSize="36sp"
+            android:text="@string/sixthQuestion"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/questionTextSize"
             android:textStyle="bold" />
 
-        <CheckBox
-            android:id="@+id/box1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:onClick="userAnswer"
-            android:paddingLeft="16dp"
-            android:text="@string/q6a"
-            android:textSize="24sp" />
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <CheckBox
-            android:id="@+id/box2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:onClick="userAnswer"
-            android:paddingLeft="16dp"
-            android:text="@string/q6b"
-            android:textSize="24sp" />
+            <RadioButton
+                android:id="@+id/a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/radioButtonMargin"
+                android:onClick="userAnswer"
+                android:paddingLeft="@dimen/radioButtonPadding"
+                android:paddingRight="@dimen/radioButtonPadding"
+                android:text="@string/q6A"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/answerTextSize" />
 
-        <CheckBox
-            android:id="@+id/box3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:onClick="userAnswer"
-            android:paddingLeft="16dp"
-            android:text="@string/q6c"
-            android:textSize="24sp" />
+            <RadioButton
+                android:id="@+id/b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/radioButtonMargin"
+                android:onClick="userAnswer"
+                android:paddingLeft="@dimen/radioButtonPadding"
+                android:paddingRight="@dimen/radioButtonPadding"
+                android:text="@string/q6B"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/answerTextSize" />
 
-        <CheckBox
-            android:id="@+id/box4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:onClick="userAnswer"
-            android:paddingLeft="16dp"
-            android:text="@string/q6d"
-            android:textSize="24sp" />
+            <RadioButton
+                android:id="@+id/c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/radioButtonMargin"
+                android:onClick="userAnswer"
+                android:paddingLeft="@dimen/radioButtonPadding"
+                android:paddingRight="@dimen/radioButtonPadding"
+                android:text="@string/q6C"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/answerTextSize" />
+
+            <RadioButton
+                android:id="@+id/d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/radioButtonMargin"
+                android:onClick="userAnswer"
+                android:paddingLeft="@dimen/radioButtonPadding"
+                android:paddingRight="@dimen/radioButtonPadding"
+                android:text="@string/q6D"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/answerTextSize" />
+
+        </RadioGroup>
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".3"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
 
     <Button
         android:layout_width="wrap_content"
@@ -78,20 +102,23 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:onClick="resultsPage"
-        android:text="@string/finish"
-        android:textAllCaps="true" />
+        android:layout_marginBottom="@dimen/navButtonBotMarg"
+        android:layout_marginEnd="@dimen/navButtonSideMarg"
+        android:layout_marginRight="@dimen/navButtonSideMarg"
+        android:onClick="questionSeven"
+        android:text="@string/next"
+        android:textAllCaps="true"
+        android:textColor="@color/primaryTextColor" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginBottom="@dimen/navButtonBotMarg"
+        android:layout_marginLeft="@dimen/navButtonSideMarg"
+        android:layout_marginStart="@dimen/navButtonSideMarg"
         android:onClick="backButton"
-        android:text="@string/previous" />
+        android:text="@string/previous"
+        android:textAllCaps="true"
+        android:textColor="@color/primaryTextColor" />
 </RelativeLayout>

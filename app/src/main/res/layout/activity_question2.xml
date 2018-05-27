@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundColor"
     android:orientation="vertical"
     tools:context="com.example.android.quizapp.Question2">
 
@@ -17,17 +16,21 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/question2"
-            android:textSize="24sp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/questionTextSize"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginBottom="@dimen/questionMarginBottom"
+            android:layout_marginLeft="@dimen/questionMarginSides"
+            android:layout_marginRight="@dimen/questionMarginSides"
+            android:layout_marginTop="@dimen/questionMarginTop"
             android:gravity="center"
-            android:text="@string/second_question"
-            android:textSize="36sp"
+            android:text="@string/secondQuestion"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/questionTextSize"
             android:textStyle="bold" />
 
         <RadioGroup
@@ -40,44 +43,63 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="userAnswer"
-                android:paddingLeft="24dp"
-                android:paddingRight="24dp"
+                android:paddingLeft="@dimen/radioButtonPadding"
+                android:paddingRight="@dimen/radioButtonPadding"
                 android:text="@string/q2A"
-                android:textSize="24sp" />
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/answerTextSize"
+                android:textStyle="bold" />
 
             <RadioButton
                 android:id="@+id/b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="userAnswer"
-                android:paddingLeft="24dp"
-                android:paddingRight="24dp"
+                android:layout_marginTop="@dimen/radioButtonMargin"
+                android:paddingLeft="@dimen/radioButtonPadding"
+                android:paddingRight="@dimen/radioButtonPadding"
                 android:text="@string/q2B"
-                android:textSize="24sp" />
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/answerTextSize"
+                android:textStyle="bold" />
 
             <RadioButton
                 android:id="@+id/c"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="userAnswer"
-                android:paddingLeft="24dp"
-                android:paddingRight="24dp"
+                android:layout_marginTop="@dimen/radioButtonMargin"
+                android:paddingLeft="@dimen/radioButtonPadding"
+                android:paddingRight="@dimen/radioButtonPadding"
                 android:text="@string/q2C"
-                android:textSize="24sp" />
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/answerTextSize"
+                android:textStyle="bold" />
 
             <RadioButton
                 android:id="@+id/d"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="userAnswer"
-                android:paddingLeft="24dp"
-                android:paddingRight="24dp"
+                android:layout_marginTop="@dimen/radioButtonMargin"
+                android:paddingLeft="@dimen/radioButtonPadding"
+                android:paddingRight="@dimen/radioButtonPadding"
                 android:text="@string/q2D"
-                android:textSize="24sp" />
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/answerTextSize"
+                android:textStyle="bold" />
 
         </RadioGroup>
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".3"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
 
     <Button
         android:layout_width="wrap_content"
@@ -85,20 +107,23 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginBottom="@dimen/navButtonBotMarg"
+        android:layout_marginEnd="@dimen/navButtonSideMarg"
+        android:layout_marginRight="@dimen/navButtonSideMarg"
         android:onClick="questionThree"
         android:text="@string/next"
-        android:textAllCaps="true" />
+        android:textAllCaps="true"
+        android:textColor="@color/primaryTextColor" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginBottom="@dimen/navButtonBotMarg"
+        android:layout_marginLeft="@dimen/navButtonSideMarg"
+        android:layout_marginStart="@dimen/navButtonSideMarg"
         android:onClick="backButton"
-        android:text="@string/previous" />
+        android:text="@string/previous"
+        android:textAllCaps="true"
+        android:textColor="@color/primaryTextColor" />
 </RelativeLayout>

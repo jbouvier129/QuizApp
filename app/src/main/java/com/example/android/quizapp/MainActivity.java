@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    //starts the quiz app
     public void startQuiz(View view) {
 
         Intent question1 = new Intent(getApplicationContext(), Question1.class);

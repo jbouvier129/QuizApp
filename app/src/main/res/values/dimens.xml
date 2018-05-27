@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="questionMarginTop">48dp</dimen>
+    <dimen name="questionMarginBottom">24dp</dimen>
+    <dimen name="questionMarginSides">8dp</dimen>
+    <dimen name="questionTextSize">24sp</dimen>
+    <dimen name="answerTextSize">16sp</dimen>
+    <dimen name="radioButtonPadding">24dp</dimen>
+    <dimen name="navButtonBotMarg">8dp</dimen>
+    <dimen name="navButtonSideMarg">8dp</dimen>
+    <dimen name="editTextMargin">16dp</dimen>
+    <dimen name="checkboxMargin">16dp</dimen>
+    <dimen name="checkboxPadding">16dp</dimen>
+    <dimen name="scoreTextSize">72sp</dimen>
+    <dimen name="radioButtonMargin">8dp</dimen>
+</resources>

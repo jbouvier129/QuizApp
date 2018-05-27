@@ -22,7 +22,12 @@
         <activity android:name=".Question4" />
         <activity android:name=".Results" />
         <activity android:name=".Question5" />
-        <activity android:name=".Question6"></activity>
+        <activity android:name=".Question6" />
+        <activity android:name=".question7" />
+        <activity android:name=".Question7" />
+        <activity android:name=".Question8" />
+        <activity android:name=".Question9" />
+        <activity android:name=".Question10"></activity>
     </application>
 
 </manifest>

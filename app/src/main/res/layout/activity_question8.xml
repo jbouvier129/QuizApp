@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.android.quizapp.Question4">
+    tools:context="com.example.android.quizapp.Question8">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/question4"
+            android:text="@string/question8"
             android:textColor="@color/primaryTextColor"
             android:textSize="@dimen/questionTextSize"
             android:textStyle="bold" />
@@ -26,7 +26,7 @@
             android:layout_marginBottom="@dimen/questionMarginBottom"
             android:layout_marginTop="@dimen/questionMarginTop"
             android:gravity="center"
-            android:text="@string/fourthQuestion"
+            android:text="@string/eighthQuestion"
             android:textColor="@color/primaryTextColor"
             android:textSize="@dimen/questionTextSize"
             android:textStyle="bold" />
@@ -41,10 +41,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="userAnswer"
-                android:layout_marginTop="@dimen/radioButtonMargin"
                 android:paddingLeft="@dimen/radioButtonPadding"
                 android:paddingRight="@dimen/radioButtonPadding"
-                android:text="@string/q4A"
+                android:text="@string/q8A"
                 android:textColor="@color/primaryTextColor"
                 android:textSize="@dimen/answerTextSize"
                 android:textStyle="bold" />
@@ -53,11 +52,11 @@
                 android:id="@+id/b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="userAnswer"
                 android:layout_marginTop="@dimen/radioButtonMargin"
+                android:onClick="userAnswer"
                 android:paddingLeft="@dimen/radioButtonPadding"
                 android:paddingRight="@dimen/radioButtonPadding"
-                android:text="@string/q4B"
+                android:text="@string/q8B"
                 android:textColor="@color/primaryTextColor"
                 android:textSize="@dimen/answerTextSize"
                 android:textStyle="bold" />
@@ -66,11 +65,11 @@
                 android:id="@+id/c"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="userAnswer"
                 android:layout_marginTop="@dimen/radioButtonMargin"
+                android:onClick="userAnswer"
                 android:paddingLeft="@dimen/radioButtonPadding"
                 android:paddingRight="@dimen/radioButtonPadding"
-                android:text="@string/q4C"
+                android:text="@string/q8C"
                 android:textColor="@color/primaryTextColor"
                 android:textSize="@dimen/answerTextSize"
                 android:textStyle="bold" />
@@ -79,11 +78,11 @@
                 android:id="@+id/d"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="userAnswer"
                 android:layout_marginTop="@dimen/radioButtonMargin"
+                android:onClick="userAnswer"
                 android:paddingLeft="@dimen/radioButtonPadding"
                 android:paddingRight="@dimen/radioButtonPadding"
-                android:text="@string/q4D"
+                android:text="@string/q8D"
                 android:textColor="@color/primaryTextColor"
                 android:textSize="@dimen/answerTextSize"
                 android:textStyle="bold" />
@@ -109,8 +108,7 @@
         android:layout_marginBottom="@dimen/navButtonBotMarg"
         android:layout_marginEnd="@dimen/navButtonSideMarg"
         android:layout_marginRight="@dimen/navButtonSideMarg"
-        android:onClick="questionFive"
-        android:textColor="@color/primaryTextColor"
+        android:onClick="questionNine"
         android:text="@string/next"
         android:textAllCaps="true" />
 
@@ -119,10 +117,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="@dimen/navButtonBotMarg"
-        android:layout_marginLeft="@dimen/navButtonSideMarg"
+        android:layout_marginLeft="@dimen/navButtonBotMarg"
         android:layout_marginStart="@dimen/navButtonSideMarg"
-        android:textAllCaps="true"
-        android:textColor="@color/primaryTextColor"
         android:onClick="backButton"
-        android:text="@string/previous" />
+        android:text="@string/previous"
+        android:textAllCaps="true"
+        android:textColor="@color/primaryTextColor" />
 </RelativeLayout>
